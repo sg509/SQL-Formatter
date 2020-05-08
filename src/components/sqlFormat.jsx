@@ -20,7 +20,7 @@ class SQLFromat extends Component {
     const analyzer = new MySQLAnalyzer();
     const diagnostics = analyzer.analyze(this.state.value);
     diagnostics.length === 0
-      ? this.setState({ value3: "Correct" })
+      ? this.setState({ value3: "Code is Correct" })
       : this.setState({ value3: diagnostics[0].message });
   }
 
